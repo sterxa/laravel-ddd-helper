@@ -1,5 +1,7 @@
 ## Laravel DDD Helper Commands
 
+The project was originally forked from https://github.com/signifly/laravel-domain-commands
+
 The `sterxa/laravel-ddd-helper` package adds a handful of useful Artisan commands to your Laravel application. It assumes you are utilizing the Domain Driven Design approach.
 
 It is heavily inspired by the DDD approach mentioned in [this great article](https://stitcher.io/blog/organise-by-domain) by Brent from Spatie.
