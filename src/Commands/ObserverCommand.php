@@ -33,7 +33,7 @@ class ObserverCommand extends ObserverMakeCommand
             return "{$rootNamespace}\\{$domain}\\Observers";
         }
 
-        $defaultNamespace = config('domain-commands.default_namespace');
+        $defaultNamespace = config('ddd-helper.default_namespace');
 
         return "{$rootNamespace}\\{$defaultNamespace}\\Observers";
     }
@@ -46,7 +46,9 @@ class ObserverCommand extends ObserverMakeCommand
      */
     protected function getPath($name)
     {
-        return $this->laravel->basePath().'/app/'.str_replace('\\', '/', $name).'.php';
+        $appPath = config('ddd-helper.app_path');
+
+        return $this->laravel->basePath().$appPath.str_replace('\\', '/', $name).'.php';
     }
 
     /**

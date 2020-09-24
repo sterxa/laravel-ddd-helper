@@ -32,7 +32,7 @@ class EnumCommand extends DomainGeneratorCommand
      */
     protected function getStub()
     {
-        $stubPath = config('domain-commands.stubs.enum');
+        $stubPath = config('ddd-helper.stubs.enum');
 
         if (! is_null($stubPath) && is_string($stubPath)) {
             return $stubPath;

@@ -33,7 +33,7 @@ class ModelCommand extends ModelMakeCommand
             return "{$rootNamespace}\\{$domain}\\Models";
         }
 
-        $defaultNamespace = config('domain-commands.default_namespace');
+        $defaultNamespace = config('ddd-helper.default_namespace');
 
         return "{$rootNamespace}\\{$defaultNamespace}\\Models";
     }
@@ -46,7 +46,9 @@ class ModelCommand extends ModelMakeCommand
      */
     protected function getPath($name)
     {
-        return $this->laravel->basePath().'/app/'.str_replace('\\', '/', $name).'.php';
+        $appPath = config('ddd-helper.app_path');
+
+        return $this->laravel->basePath().$appPath.str_replace('\\', '/', $name).'.php';
     }
 
     /**

@@ -32,7 +32,7 @@ class ActionCommand extends DomainGeneratorCommand
      */
     protected function getStub()
     {
-        $stubPath = config('domain-commands.stubs.action');
+        $stubPath = config('ddd-helper.stubs.action');
 
         if (! is_null($stubPath) && is_string($stubPath)) {
             return $stubPath;

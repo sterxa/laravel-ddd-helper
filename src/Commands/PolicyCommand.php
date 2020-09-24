@@ -33,7 +33,7 @@ class PolicyCommand extends PolicyMakeCommand
             return "{$rootNamespace}\\{$domain}\\Policies";
         }
 
-        $defaultNamespace = config('domain-commands.default_namespace');
+        $defaultNamespace = config('ddd-helper.default_namespace');
 
         return "{$rootNamespace}\\{$defaultNamespace}\\Policies";
     }
@@ -46,7 +46,9 @@ class PolicyCommand extends PolicyMakeCommand
      */
     protected function getPath($name)
     {
-        return $this->laravel->basePath().'/app/'.str_replace('\\', '/', $name).'.php';
+        $appPath = config('ddd-helper.app_path');
+
+        return $this->laravel->basePath().$appPath.str_replace('\\', '/', $name).'.php';
     }
 
     /**

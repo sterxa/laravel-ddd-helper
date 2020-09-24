@@ -49,7 +49,7 @@ class DTOCommand extends DomainGeneratorCommand
      */
     protected function getStub()
     {
-        $stubPath = config('domain-commands.stubs.dto');
+        $stubPath = config('ddd-helper.stubs.dto');
 
         if (! is_null($stubPath) && is_string($stubPath)) {
             return $stubPath;

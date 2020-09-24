@@ -8,6 +8,7 @@ return [
      * Example: Domain\Shared\Actions\SomeAction
      */
     'default_namespace' => 'Shared',
+    'app_path' => '/src/',
 
     /*
      * Overwrite the default stubs for each domain class type.
