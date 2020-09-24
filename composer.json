@@ -1,0 +1,37 @@
+{
+    "name": "sterxa/laravel-ddd-helper",
+    "description": "Useful Artisan commands to help Laravel apps that utilizes Domain Driven Design.",
+    "homepage": "https://github.com/sterxa/laravel-ddd-helper",
+    "license": "MIT",
+    "require": {
+        "php": "^7.4",
+        "laravel/framework": "^8.0"
+    },
+    "require-dev": {
+        "orchestra/testbench": "^5.0",
+        "phpunit/phpunit": "^9.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Sterxa\\Console\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Sterxay\\Console\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "vendor/bin/phpunit"
+    },
+    "config": {
+        "sort-packages": true
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Sterxa\\Console\\DomainServiceProvider"
+            ]
+        }
+    }
+}
