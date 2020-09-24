@@ -2,6 +2,8 @@
 
 namespace DummyNamespace;
 
-final class DummyClass
+use \Spatie\Enum\Enum;
+
+final class DummyClass extends Enum
 {
 }
