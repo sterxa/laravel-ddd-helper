@@ -1,0 +1,18 @@
+<?php
+
+namespace DummyNamespace;
+
+use Illuminate\Events\Dispatcher;
+
+final class DummyClassSubscriber
+{
+    public function __construct()
+    {
+        //
+    }
+
+    public function subscribe(Dispatcher $dispatcher): void
+    {
+        //
+    }
+}

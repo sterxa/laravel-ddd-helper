@@ -16,23 +16,18 @@ return [
      * When set to `null`, the default stub is used.
      */
     'stubs' => [
-
         'action' => null,
-
         'dto' => null,
-
         'enum' => null,
-
         'event' => null,
-
+        'subscriber' => null,
+        'query-builder' => null,
+        'collection' => null,
+        'state' => null,
         'model' => null,
-
         'observer' => null,
-
         'policy' => null,
-
         'rule' => null,
-
     ],
 
 ];
