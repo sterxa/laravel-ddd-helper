@@ -4,7 +4,7 @@ namespace DummyNamespace;
 
 use Illuminate\Database\Eloquent\Collection;
 
-final class DummyClassCollection extends Collection
+final class DummyClass extends Collection
 {
     //
 }

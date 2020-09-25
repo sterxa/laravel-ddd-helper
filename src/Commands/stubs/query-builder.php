@@ -4,7 +4,7 @@ namespace DummyNamespace;
 
 use Illuminate\Database\Eloquent\Builder;
 
-final class DummyClassQueryBuilder extends Builder
+final class DummyClass extends Builder
 {
     //
 }

@@ -4,7 +4,7 @@ namespace DummyNamespace;
 
 use Illuminate\Events\Dispatcher;
 
-final class DummyClassSubscriber
+final class DummyClass
 {
     public function __construct()
     {
