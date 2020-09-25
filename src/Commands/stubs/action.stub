@@ -2,8 +2,12 @@
 
 namespace DummyNamespace;
 
-final class DummyClass
+use Spatie\QueueableAction\QueueableAction;
+
+final class DummyClassAction
 {
+    use QueueableAction;
+
     public function execute()
     {
         //

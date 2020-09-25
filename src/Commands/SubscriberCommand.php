@@ -2,29 +2,28 @@
 
 namespace Sterxa\Console\Commands;
 
-
-class ActionCommand extends DomainGeneratorCommand
+class SubscriberCommand extends DomainGeneratorCommand
 {
     /**
      * The console command name.
      *
      * @var string
      */
-    protected $name = 'domain:action';
+    protected $name = 'domain:subscriber';
 
     /**
      * The console command description.
      *
      * @var string
      */
-    protected $description = 'Create an action for a given domain';
+    protected $description = 'Create event subscriber for a given domain';
 
     /**
      * The type of class being generated.
      *
      * @var string
      */
-    protected $type = 'Action';
+    protected $type = 'Subscriber';
 
     /**
      * Get the stub file for the generator.
@@ -33,12 +32,12 @@ class ActionCommand extends DomainGeneratorCommand
      */
     protected function getStub()
     {
-        $stubPath = config('ddd-helper.stubs.action');
+        $stubPath = config('ddd-helper.stubs.subscriber');
 
         if (! is_null($stubPath) && is_string($stubPath)) {
             return $stubPath;
         }
 
-        return __DIR__.'/stubs/action.stub';
+        return __DIR__.'/stubs/subscriber.stub';
     }
 }
