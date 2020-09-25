@@ -40,4 +40,9 @@ class CollectionCommand extends DomainGeneratorCommand
 
         return __DIR__.'/stubs/collection.stub';
     }
+
+    protected function getNameInput()
+    {
+        return trim($this->argument('name') . 'Data');
+    }
 }

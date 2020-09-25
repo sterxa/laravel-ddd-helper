@@ -40,4 +40,9 @@ class EnumCommand extends DomainGeneratorCommand
 
         return __DIR__.'/stubs/enum.stub';
     }
+
+    protected function getNameInput()
+    {
+        return trim($this->argument('name') . $this->type);
+    }
 }

@@ -41,4 +41,9 @@ class ActionCommand extends DomainGeneratorCommand
 
         return __DIR__.'/stubs/action.stub';
     }
+
+    protected function getNameInput()
+    {
+        return trim($this->argument('name') . 'Action');
+    }
 }

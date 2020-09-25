@@ -40,4 +40,9 @@ class EventCommand extends DomainGeneratorCommand
 
         return __DIR__.'/stubs/event.stub';
     }
+
+    protected function getNameInput()
+    {
+        return trim($this->argument('name') . $this->type);
+    }
 }

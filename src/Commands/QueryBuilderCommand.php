@@ -40,4 +40,9 @@ class QueryBuilderCommand extends DomainGeneratorCommand
 
         return __DIR__.'/stubs/query-builder.stub';
     }
+
+    protected function getNameInput()
+    {
+        return trim($this->argument('name') . $this->type);
+    }
 }
