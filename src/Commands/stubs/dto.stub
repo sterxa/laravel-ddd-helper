@@ -4,7 +4,7 @@ namespace DummyNamespace;
 
 use Spatie\DataTransferObject\DataTransferObject;
 
-final class DummyClassData extends DataTransferObject
+final class DummyClass extends DataTransferObject
 {
     //
 }

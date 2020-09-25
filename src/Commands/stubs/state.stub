@@ -4,7 +4,7 @@ namespace DummyNamespace;
 
 use Spatie\ModelStates\State;
 
-abstract class DummyClassState extends State
+abstract class DummyClass extends State
 {
     //
 }

@@ -5,7 +5,7 @@ namespace DummyNamespace;
 use Illuminate\Queue\SerializesModels;
 use Illuminate\Foundation\Events\Dispatchable;
 
-final class DummyClassEvent
+final class DummyClass
 {
     use Dispatchable, SerializesModels;
 
