@@ -42,6 +42,11 @@ class DTOCommand extends DomainGeneratorCommand
         return "{$rootNamespace}\\{$defaultNamespace}\\DTO";
     }
 
+    protected function getNameInput()
+    {
+        return trim($this->argument('name') . 'Data');
+    }
+
     /**
      * Get the stub file for the generator.
      *

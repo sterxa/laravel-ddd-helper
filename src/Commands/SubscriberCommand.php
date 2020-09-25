@@ -40,4 +40,9 @@ class SubscriberCommand extends DomainGeneratorCommand
 
         return __DIR__.'/stubs/subscriber.stub';
     }
+
+    protected function getNameInput()
+    {
+        return trim($this->argument('name') . $this->type);
+    }
 }
